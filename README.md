@@ -2,6 +2,8 @@
 
 Minimal implementation of Hookean springs in PyTorch.
 
+This is demo code for https://medium.com/@juniorrojas/physics-based-simulation-via-backpropagation-on-energy-functions-6d3b0e93f5fb.
+
 ```
 python example.py
 ```
