@@ -20,7 +20,6 @@ class HookeanSpringPotential(nn.Module):
         self.register_buffer("incidence", make_incidence(indices, num_vertices))
         self.register_buffer("l0", l0)
         self.register_buffer("k", k)
-        self.k = k
 
     def energy(self, x):
         d = self.incidence.mm(x)
