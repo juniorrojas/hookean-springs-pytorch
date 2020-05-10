@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+*.swo
+*.swp
+.DS_Store
+*.log
+.vscode
