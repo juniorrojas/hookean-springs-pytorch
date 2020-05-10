@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 
 def make_incidence(indices, num_vertices):
+    # this creates a dense matrix (incidence), but
+    # sparse matrices or convolutions might be more appropriate
+    # in certain cases
     num_springs = len(indices)
     incidence = torch.zeros(num_springs, num_vertices, dtype=torch.float32)
     for i, item in enumerate(indices):
