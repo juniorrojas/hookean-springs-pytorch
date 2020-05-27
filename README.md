@@ -4,7 +4,7 @@ Hookean springs in PyTorch.
 
 ![](media/compgraph.gif)
 
-The main implementation is in `hookean_spring_potential.py` which implements an `nn.Module` that can compute the potential energy of a collection of Hookean spring.
+The main implementation is in `hookean_spring_potential.py` which implements an `nn.Module` that can compute the potential energy of a collection of Hookean springs.
 
 Read more about the ideas behind this implementation: https://medium.com/@juniorrojas/physics-based-simulation-via-backpropagation-on-energy-functions-6d3b0e93f5fb.
 
