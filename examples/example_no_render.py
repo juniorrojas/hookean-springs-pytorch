@@ -65,5 +65,5 @@ for i in range(100):
     loss = springs.energy(x)
     loss.backward()
     optimizer.step()
-    print("time step: {}".format(i))
+    print("iteration: {}".format(i))
     print(x)
