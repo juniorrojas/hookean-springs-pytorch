@@ -1,5 +1,8 @@
 import torch
 from hookean_spring_potential import HookeanSpringPotential
+import matplotlib.pyplot as plt
+from matplotlib import collections as mc
+from matplotlib.animation import FuncAnimation
 
 # vertex positions
 x = torch.tensor([
@@ -60,9 +63,37 @@ springs = HookeanSpringPotential(indices, l0, k, num_vertices)
 
 optimizer = torch.optim.Adam([x], lr=1e-1)
 
-for _ in range(100):
+# render
+fig, ax = plt.subplots()
+
+def make_segment_data():
+    segments = []
+    for ind in indices:
+        a = x[ind[0]].tolist()
+        b = x[ind[1]].tolist()
+        segments.append([a, b])
+    return segments
+
+vertices = ax.scatter([], [])
+segments = mc.LineCollection(make_segment_data())
+
+def init():
+    ax.add_collection(segments)
+    ax.set_aspect(1)
+    ax.set_xlim(-1, 3.5)
+    ax.set_ylim(-2, 2.5)
+    return vertices, segments
+
+def update(frame):
     optimizer.zero_grad()
     loss = springs.energy(x)
     loss.backward()
     optimizer.step()
-    print(x)
+
+    segments.set_segments(make_segment_data())
+    vertices.set_offsets(x.detach())
+    return vertices, segments
+
+anim = FuncAnimation(fig, update, frames=None, init_func=init, interval=30, blit=True)
+
+plt.show()
