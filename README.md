@@ -10,7 +10,7 @@ Read more about the ideas behind this implementation: https://medium.com/@junior
 
 ## examples
 
-A minimization loop that prints the state after every optimization step. The state is `x`, a `float(n, 2)` tensor where `n` is the number of vertices:
+A minimization loop that prints the state every iteration. The state is `x`, a `float(n, 2)` tensor where `n` is the number of vertices:
 
 ```
 python examples/example_no_render.py
