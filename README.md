@@ -10,6 +10,12 @@ Read more about the ideas behind this implementation: https://medium.com/@junior
 
 ## examples
 
+You might need to temporarily set your `PYTHONPATH` to run the examples:
+
+```
+export PYTHONPATH=$PYTHONPATH:.
+```
+
 A minimization loop that prints the state every iteration. The state is `x`, a `float(n, 2)` tensor where `n` is the number of vertices:
 
 ```
