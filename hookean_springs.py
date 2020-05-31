@@ -13,7 +13,7 @@ def make_incidence(indices, num_vertices):
         incidence[i, i2] = -1
     return incidence
 
-class HookeanSpringPotential(nn.Module):
+class HookeanSprings(nn.Module):
     def __init__(self, indices, l0, k, num_vertices):
         super().__init__()
         self.indices = indices

@@ -1,5 +1,5 @@
 import torch
-from hookean_spring_potential import HookeanSpringPotential
+from hookean_springs import HookeanSprings
 import matplotlib.pyplot as plt
 from matplotlib import collections as mc
 from matplotlib.animation import FuncAnimation
@@ -59,7 +59,7 @@ num_springs = len(indices)
 # stiffness
 k = torch.ones(num_springs, dtype=torch.float32)
 
-springs = HookeanSpringPotential(indices, l0, k, num_vertices)
+springs = HookeanSprings(indices, l0, k, num_vertices)
 
 optimizer = torch.optim.Adam([x], lr=1e-1)
 
