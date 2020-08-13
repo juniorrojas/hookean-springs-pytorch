@@ -14,7 +14,7 @@ You might need to temporarily set your `PYTHONPATH` to run the examples:
 export PYTHONPATH=$PYTHONPATH:.
 ```
 
-## minimization loop
+### minimization loop
 
 The state containing vertex positions is `x: float(n, 2)`, where `n` is the number of vertices. The script prints `x` after every optimization step.
 
@@ -22,7 +22,7 @@ The state containing vertex positions is `x: float(n, 2)`, where `n` is the numb
 python examples/example_no_render.py
 ```
 
-## matplotlib visualization
+### matplotlib visualization
 
 ```
 python examples/example_render.py
