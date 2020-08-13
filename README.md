@@ -14,13 +14,15 @@ You might need to temporarily set your `PYTHONPATH` to run the examples:
 export PYTHONPATH=$PYTHONPATH:.
 ```
 
-A minimization loop that prints the state every iteration. The state is `x`, a `float(n, 2)` tensor where `n` is the number of vertices:
+## minimization loop
+
+The state containing vertex positions is `x: float(n, 2)`, where `n` is the number of vertices. The script prints `x` after every optimization step.
 
 ```
 python examples/example_no_render.py
 ```
 
-A basic visualization using matplotlib:
+## matplotlib visualization
 
 ```
 python examples/example_render.py
