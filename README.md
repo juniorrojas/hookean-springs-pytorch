@@ -8,6 +8,8 @@ The code in this repository shows how to compute the potential energy of a mass-
 
 ## examples
 
+Tested with python 3.7 and pytorch 1.6.0.
+
 You might need to temporarily set your `PYTHONPATH` to run the examples:
 
 ```
