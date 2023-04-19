@@ -37,8 +37,7 @@ python examples/example_render.py
 This code was released as supplementary material for the paper [Deep reinforcement learning for 2D soft body locomotion](https://neurips2019creativity.github.io/doc/drlsbl-neurips-2019.pdf) to illustrate implementation details. To cite this in your research, please use the following BibTeX entry:
 
 ```bibtex
-@conference{
-  rojas2019-drl-sbl,
+@conference{rojas2019-drl-sbl,
   title = {Deep reinforcement learning for 2{D} soft body locomotion},
   author = {Junior Rojas and Stelian Coros and Ladislav Kavan},
   booktitle = {NeurIPS Workshop on Machine Learning for Creativity and Design 3.0},
