@@ -34,7 +34,7 @@ python examples/example_render.py
 
 ## citation
 
-This code was released as supplementary material for the paper [Deep reinforcement learning for 2D soft body locomotion](https://neurips2019creativity.github.io/doc/drlsbl-neurips-2019.pdf) to illustrate implementation details. If you find this work useful in your research, please consider citing:
+This code was released as supplementary material for the paper [Deep reinforcement learning for 2D soft body locomotion](https://neurips2019creativity.github.io/doc/drlsbl-neurips-2019.pdf) to illustrate implementation details. If you find this work useful in your research, please use the following BibTeX template:
 
 ```
 @conference{
