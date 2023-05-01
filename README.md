@@ -2,7 +2,7 @@
 
 Hookean springs in PyTorch.
 
-The code in this repository shows how to compute the potential energy of a mass-spring using differentiable tensor operations. Read more [here](https://medium.com/@juniorrojas/physics-based-simulation-via-backpropagation-on-energy-functions-6d3b0e93f5fb).
+The code in this repository shows how to compute the potential energy of a mass-spring system using differentiable tensor operations. Read more [here](https://medium.com/@juniorrojas/physics-based-simulation-via-backpropagation-on-energy-functions-6d3b0e93f5fb).
 
 ![](media/compgraph.gif)
 
