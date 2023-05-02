@@ -10,10 +10,10 @@ The code in this repository shows how to compute the potential energy of a mass-
 
 Tested with Python 3.7 and PyTorch 1.6.0.
 
-You might need to temporarily set your `PYTHONPATH` to run the examples:
+Set your `PYTHONPATH` to run the examples.
 
 ```
-export PYTHONPATH=$PYTHONPATH:.
+export PYTHONPATH=.
 ```
 
 ### minimization loop
